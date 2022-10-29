@@ -1,0 +1,20 @@
+<script setup>
+    import { ref, reactive } from 'vue'
+      
+    const state = reactive({ count: 0});
+    
+    const increment = () => {
+      state.count++;
+    }
+    
+    const msg = ref('Hello World!')
+    </script>
+    
+    <template>
+      <h1>{{ state.count }}</h1>
+      <button @click="increment">
+        Increment count
+      </button>
+    </template>
+
+    https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdCBzZXR1cD5cbmltcG9ydCB7IHJlZiwgcmVhY3RpdmUgfSBmcm9tICd2dWUnXG4gIFxuY29uc3Qgc3RhdGUgPSByZWFjdGl2ZSh7IGNvdW50OiAwfSk7XG5cbmNvbnN0IGluY3JlbWVudCA9ICgpID0+IHtcbiAgc3RhdGUuY291bnQrKztcbn1cblxuY29uc3QgbXNnID0gcmVmKCdIZWxsbyBXb3JsZCEnKVxuPC9zY3JpcHQ+XG5cbjx0ZW1wbGF0ZT5cbiAgPGgxPnt7IHN0YXRlLmNvdW50IH19PC9oMT5cbiAgPGJ1dHRvbiBAY2xpY2s9XCJpbmNyZW1lbnRcIj5cblx0SW5jcmVtZW50IGNvdW50XG4gIDwvYnV0dG9uPlxuPC90ZW1wbGF0ZT4iLCJpbXBvcnQtbWFwLmpzb24iOiJ7XG4gIFwiaW1wb3J0c1wiOiB7XG4gICAgXCJ2dWVcIjogXCJodHRwczovL3NmYy52dWVqcy5vcmcvdnVlLnJ1bnRpbWUuZXNtLWJyb3dzZXIuanNcIlxuICB9XG59In0=
